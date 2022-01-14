@@ -1,68 +1,118 @@
 /* --------- fonts start------------ */
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-*{
-    margin: 0%;
-    padding: 0%;
+* {
+  margin: 0%;
+  padding: 0%;
 }
-nav{
-    display: flex;
-    justify-content: space-between;
-    margin: 80px 120px;
-}
-
-nav ul{
-    display: flex;
-}
-nav li{
-    list-style: none;
-    margin: 10px;
-}
-nav ul a{
-    text-decoration: none;
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 120px;
 }
 
-.container{
+nav ul {
+  display: flex;
+}
+nav li {
+  list-style: none;
+  margin: 10px;
+}
+nav ul a {
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  margin: 50px 230px;
+  justify-content: space-between;
+  align-items: center;
+}
+.heading {
+  margin: 50px;
+  padding: 20px;
+}
+.headingImage {
+  height: 475px;
+  width: 475px;
+  margin-right: 65px;
+}
+.circleBg {
+  position: relative;
+  top: 0%;
+  z-index: 1;
+}
+.mainCamera {
+  position: relative;
+  top: -458px;
+  left: 25px;
+  z-index: 2;
+}
+header h1 {
+  font-family: "Kaushan Script", cursive;
+  font-size: 58px;
+  margin-bottom: 30px;
+}
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+}
+.logos {
+  display: flex;
+  justify-content: center;
+}
+.logos img {
+  margin: 5px 25px;
+}
+hr {
+  border: 1px solid lightgrey;
+}
+
+main > h2{
+  margin: 100px 0;
+  text-align: center;
+}
+.productSection{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.products{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+    
+}
+article{
     display: flex;
-    margin: 50px 230px;
-    justify-content: space-between;
-    align-items: center;
+    width: 350px;
+    box-shadow:  0px 0px 19px 0px rgb(0, 0, 0, .15);
+    padding-bottom: 10px;
 }
-.heading{
-    margin: 50px;
-    padding: 20px
+.productContainer{
+  margin: auto;
 }
-.headingImage{
-    height: 475px;
-    width: 475px;
-    margin-right: 65px;
+.productImage{
+    width: 300px;
+    height: 256px;
+    border-radius: 15px;
+    margin: 15px 0;
 }
-.circleBg{
-    position: relative;
-    top: 0%;
-    z-index: 1;
+.productInfo h2{
+  padding: 5px 0;
 }
-.mainCamera{
-    position: relative;
-    top: -458px;
-    left: 25px;
-    z-index: 2;
+.ratings{
+  margin: 5px 0;
+  display: flex;
+  
 }
-header h1{
-    font-family: 'Kaushan Script', cursive;
-    font-size: 58px;
-    margin-bottom: 30px;
+span{
+  margin-left: 10px;
+
 }
-p{
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    line-height: 30px;
-}
-.logos{
-    display: flex;
-    justify-content: center;
-}
-.logos img{
-    margin: 5px 25px;
+.stars{
+  color: #FB8200;
 }
