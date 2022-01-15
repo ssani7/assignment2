@@ -28,6 +28,7 @@ nav ul a {
   margin: 50px 230px;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
 }
 .heading {
   margin: 50px;
@@ -54,14 +55,16 @@ header h1 {
   font-size: 58px;
   margin-bottom: 30px;
 }
-p {
+.heading p {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   line-height: 30px;
+  font-weight: 600;
 }
 .logos {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .logos img {
   margin: 5px 25px;
@@ -115,4 +118,36 @@ span{
 }
 .stars{
   color: #FB8200;
+}
+footer{
+  margin-top: 50px;
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+@media only screen and (max-width:688px) {
+
+  .container{
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: 0 0;
+  }
+  .heading{
+    margin: 0 0;
+  }
+  .logos{
+    flex-wrap: wrap;
+  }
+  .products{
+    grid-template-columns: 1fr;
+
+  }
+  article{
+    width: 100%;
+  }
+  
 }
