@@ -14,7 +14,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha512-fzff82+8pzHnwA1mQ0dzz9/E0B+ZRizq08yZfya66INZBz86qKTCt9MLU0NCNIgaMJCgeyhujhasnFUsYMsi0Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <nav>
         <h1 class="logo">Products For Influencer</h1>
-        <ul>
+        <input type="checkbox" name="" id="navToggler" >
+        <label class="navBar" for="navToggler"><i class="fas fa-bars"></i></label>
+        <ul class="navigation">
             <li><a href="">Products</a</li>
             <li><a href="">Sign Up</a></li>
             <li><a href="">Log In</a></li>
@@ -37,239 +39,339 @@
         </div>
         <hr>
         <div class="logos">
-            <img src="/logos/Alibaba.svg" alt="">
-            <img src="/logos/Amazon.svg" alt="">
-            <img src="/logos/Daraz.pk Logo.svg" alt="">
-            <img src="/logos/Ebay.svg" alt="">
-            <img src="/logos/Rakuten.svg" alt="">
-            <img src="/logos/Target.svg" alt="">
-            <img src="/logos/Walmart.svg" alt="">
+            <img src="logos/Amazon.svg" alt="">
+            <img src="logos/Daraz.pk Logo.svg" alt="">
+            <img src="logos/Ebay.svg" alt="">
+            <img src="logos/Alibaba.svg" alt="">
+            <img src="logos/Rakuten.svg" alt="">
+            <img src="logos/Target.svg" alt="">
+            <img src="logos/Walmart.svg" alt="">
         </div>
         <hr>
     </header>
     <main>
-        <h1 id="popular">Popular Collection</h1>
+        <h1 class="sectionTitle">Popular Collection</h1>
         <div class="productSection">
             <div class="products">
-            <article>
-                <div class="productContainer">
-                    <div class="productImage">
-                        <img src="images/tripod.png" alt="">
-                    </div>
-                    <div class="productInfo">
-                        <h2>Flex Tripod</h2>
-                        <h2 class="price">$50.48</h2>
-                        <div class="ratings">
-                            <div>
-                                <i class="fas fa-star stars"></i>
-                                <i class="fas fa-star stars"></i>
-                                <i class="fas fa-star stars"></i>
-                                <i class="fas fa-star stars"></i>
-                                <i class="fas fa-star-half-alt stars"></i>
-                            </div>
-                            <span>4.9</span>
+                <article>
+                    <div class="productContainer">
+                        <div class="productImage">
+                            <img src="images/tripod.png" alt="">
                         </div>
-                        <p>Wordwide shifting <br> available <br> Buyers protection possible!</p>
-                    </div>
-                </div>
-                
-            </article> 
-            
-            <article>
-                <div class="productContainer">
-                    <div class="productImage">
-                        <img src="images/mic.png" alt="">
-                    </div>
-                    <div class="productInfo">
-                        <h2>microphone</h2>
-                        <h2 class="price">$120.25</h2>
-                        <div class="ratings">
-                            <div>
-                                <i class="fas fa-star stars"></i>
-                                <i class="fas fa-star stars"></i>
-                                <i class="fas fa-star stars"></i>
-                                <i class="fas fa-star stars"></i>
-                                <i class="fas fa-star-half-alt stars"></i>
+                        <div class="productInfo">
+                            <h2>Flex Tripod</h2>
+                            <h2 class="price">$50.48</h2>
+                            <div class="ratings">
+                                <div class="starDiv">
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star-half-alt stars"></i>
+                                </div>
+                                <h2>4.9</h2>
                             </div>
-                            <span>4.9</span>
+                            <p>Wordwide shifting <br> available <br> Buyers protection possible!</p>
                         </div>
-                        <p>Wordwide shifting <br> available <br> Buyers protection possible!</p>
                     </div>
-                </div>
+                    
+                </article> 
                 
-            </article> 
-            
-            <article>
-                <div class="productContainer">
-                    <div class="productImage">
-                        <img src="./images/airpod.png" alt="">
-                    </div>
-                    <div class="productInfo">
-                        <h2>Airbuds</h2>
-                        <h2 class="price">$100.00</h2>
-                        <div class="ratings">
-                            <div>
-                                <i class="fas fa-star stars"></i>
-                                <i class="fas fa-star stars"></i>
-                                <i class="fas fa-star stars"></i>
-                                <i class="fas fa-star stars"></i>
-                                <i class="fas fa-star-half-alt stars"></i>
+                <article>
+                    <div class="productContainer">
+                        <div class="productImage">
+                            <img src="images/mic.png" alt="">
+                        </div>
+                        <div class="productInfo">
+                            <h2>microphone</h2>
+                            <h2 class="price">$120.25</h2>
+                            <div class="ratings">
+                                <div class="starDiv">
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star-half-alt stars"></i>
+                                </div>
+                                <h2>4.9</h2>
                             </div>
-                            <span>4.9</span>
+                            <p>Wordwide shifting <br> available <br> Buyers protection possible!</p>
                         </div>
-                        <p>Wordwide shifting <br> available <br> Buyers protection possible!</p>
                     </div>
-                </div>
+                    
+                </article> 
                 
-            </article> 
-            
-            <article>
-                <div class="productContainer">
-                    <div class="productImage">
-                        <img src="images/drone.png" alt="">
-                    </div>
-                    <div class="productInfo">
-                        <h2>Drone</h2>
-                        <h2 class="price">$50.48</h2>
-                        <div class="ratings">
-                            <div>
-                                <i class="fas fa-star stars"></i>
-                                <i class="fas fa-star stars"></i>
-                                <i class="fas fa-star stars"></i>
-                                <i class="fas fa-star stars"></i>
-                                <i class="fas fa-star-half-alt stars"></i>
+                <article>
+                    <div class="productContainer">
+                        <div class="productImage">
+                            <img src="./images/airpod.png" alt="">
+                        </div>
+                        <div class="productInfo">
+                            <h2>Airbuds</h2>
+                            <h2 class="price">$100.00</h2>
+                            <div class="ratings">
+                                <div class="starDiv">
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star-half-alt stars"></i>
+                                </div>
+                                <h2>4.9</h2>
                             </div>
-                            <span>4.9</span>
+                            <p>Wordwide shifting <br> available <br> Buyers protection possible!</p>
                         </div>
-                        <p>Wordwide shifting <br> available <br> Buyers protection possible!</p>
                     </div>
-                </div>
+                    
+                </article> 
                 
-            </article> 
-            
-            <article>
-                <div class="productContainer">
-                    <div class="productImage">
-                        <img src="./images/lights.png" alt="">
-                    </div>
-                    <div class="productInfo">
-                        <h2>Light Setup</h2>
-                        <h2 class="price">$1200.00</h2>
-                        <div class="ratings">
-                            <div>
-                                <i class="fas fa-star stars"></i>
-                                <i class="fas fa-star stars"></i>
-                                <i class="fas fa-star stars"></i>
-                                <i class="fas fa-star stars"></i>
-                                <i class="fas fa-star-half-alt stars"></i>
+                <article>
+                    <div class="productContainer">
+                        <div class="productImage">
+                            <img src="images/drone.png" alt="">
+                        </div>
+                        <div class="productInfo">
+                            <h2>Drone</h2>
+                            <h2 class="price">$50.48</h2>
+                            <div class="ratings">
+                                <div class="starDiv">
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star-half-alt stars"></i>
+                                </div>
+                                <h2>4.9</h2>
                             </div>
-                            <span>4.9</span>
+                            <p>Wordwide shifting <br> available <br> Buyers protection possible!</p>
                         </div>
-                        <p>Wordwide shifting <br> available <br> Buyers protection possible!</p>
                     </div>
-                </div>
+                    
+                </article> 
                 
-            </article> 
-            
-            <article>
-                <div class="productContainer">
-                    <div class="productImage">
-                        <img src="./images/setup.png" alt="">
-                    </div>
-                    <div class="productInfo">
-                        <h2>Photoshoot Set</h2>
-                        <h2 class="price">$820.00</h2>
-                        <div class="ratings">
-                            <div>
-                                <i class="fas fa-star stars"></i>
-                                <i class="fas fa-star stars"></i>
-                                <i class="fas fa-star stars"></i>
-                                <i class="fas fa-star stars"></i>
-                                <i class="fas fa-star-half-alt stars"></i>
+                <article>
+                    <div class="productContainer">
+                        <div class="productImage">
+                            <img src="./images/lights.png" alt="">
+                        </div>
+                        <div class="productInfo">
+                            <h2>Light Setup</h2>
+                            <h2 class="price">$1200.00</h2>
+                            <div class="ratings">
+                                <div class="starDiv">
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star-half-alt stars"></i>
+                                </div>
+                                <h2>4.9</h2>
                             </div>
-                            <span>4.9</span>
+                            <p>Wordwide shifting <br> available <br> Buyers protection possible!</p>
                         </div>
-                        <p>Wordwide shifting <br> available <br> Buyers protection possible!</p>
                     </div>
-                </div>
+                    
+                </article> 
                 
-            </article> 
-            
-            <article>
-                <div class="productContainer">
-                    <div class="productImage">
-                        <img src="./images/camera.png" alt="">
-                    </div>
-                    <div class="productInfo">
-                        <h2>Vlogging Camera</h2>
-                        <h2 class="price">$1800.00</h2>
-                        <div class="ratings">
-                            <div>
-                                <i class="fas fa-star stars"></i>
-                                <i class="fas fa-star stars"></i>
-                                <i class="fas fa-star stars"></i>
-                                <i class="fas fa-star stars"></i>
-                                <i class="fas fa-star-half-alt stars"></i>
+                <article>
+                    <div class="productContainer">
+                        <div class="productImage">
+                            <img src="./images/setup.png" alt="">
+                        </div>
+                        <div class="productInfo">
+                            <h2>Photoshoot Set</h2>
+                            <h2 class="price">$820.00</h2>
+                            <div class="ratings">
+                                <div class="starDiv">
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star-half-alt stars"></i>
+                                </div>
+                                <h2>4.9</h2>
                             </div>
-                            <span>4.9</span>
+                            <p>Wordwide shifting <br> available <br> Buyers protection possible!</p>
                         </div>
-                        <p>Wordwide shifting<br>  available <br> Buyers protection possible!</p>
                     </div>
-                </div>
+                    
+                </article> 
                 
-            </article> 
-            
-            <article>
-                <div class="productContainer">
-                    <div class="productImage">
-                        <img src="./images/single-light.png" alt="">
-                    </div>
-                    <div class="productInfo">
-                        <h2>Green Screen</h2>
-                        <h2 class="price">$25.48</h2>
-                        <div class="ratings">
-                            <div>
-                                <i class="fas fa-star stars"></i>
-                                <i class="fas fa-star stars"></i>
-                                <i class="fas fa-star stars"></i>
-                                <i class="fas fa-star stars"></i>
-                                <i class="fas fa-star-half-alt stars"></i>
+                <article>
+                    <div class="productContainer">
+                        <div class="productImage">
+                            <img src="./images/camera.png" alt="">
+                        </div>
+                        <div class="productInfo">
+                            <h2>Vlogging Camera</h2>
+                            <h2 class="price">$1800.00</h2>
+                            <div class="ratings">
+                                <div class="starDiv">
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star-half-alt stars"></i>
+                                </div>
+                                <h2>4.9</h2>
                             </div>
-                            <span>4.9</span>
+                            <p>Wordwide shifting<br>  available <br> Buyers protection possible!</p>
                         </div>
-                        <p>Wordwide shifting<br>  available <br> Buyers protection possible!</p>
                     </div>
-                </div>
+                    
+                </article> 
                 
-            </article> 
-            
-            <article>
-                <div class="productContainer">
-                    <div class="productImage">
-                        <img src="./images/action.png" alt="">
-                    </div>
-                    <div class="productInfo">
-                        <h2>Action Camera</h2>
-                        <h2 class="price">$380.00</h2>
-                        <div class="ratings">
-                            <div>
-                                <i class="fas fa-star stars"></i>
-                                <i class="fas fa-star stars"></i>
-                                <i class="fas fa-star stars"></i>
-                                <i class="fas fa-star stars"></i>
-                                <i class="fas fa-star-half-alt stars"></i>
+                <article>
+                    <div class="productContainer">
+                        <div class="productImage">
+                            <img src="./images/single-light.png" alt="">
+                        </div>
+                        <div class="productInfo">
+                            <h2>Green Screen</h2>
+                            <h2 class="price">$25.48</h2>
+                            <div class="ratings">
+                                <div class="starDiv">
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star-half-alt stars"></i>
+                                </div>
+                                <h2>4.9</h2>
                             </div>
-                            <span>4.9</span>
+                            <p>Wordwide shifting<br>  available <br> Buyers protection possible!</p>
                         </div>
-                        <p>Wordwide shifting<br>  available <br> Buyers protection possible!</p>
                     </div>
-                </div>
+                    
+                </article> 
                 
-            </article> 
-            
-        </div>
+                <article>
+                    <div class="productContainer">
+                        <div class="productImage">
+                            <img src="./images/action.png" alt="">
+                        </div>
+                        <div class="productInfo">
+                            <h2>Action Camera</h2>
+                            <h2 class="price">$380.00</h2>
+                            <div class="ratings">
+                                <div  class="starDiv">
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star-half-alt stars"></i>
+                                </div>
+                                <h2>4.9</h2>
+                            </div>
+                            <p>Wordwide shifting<br>  available <br> Buyers protection possible!</p>
+                        </div>
+                    </div>
+                    
+                </article> 
+                
+            </div>
+            <div class="seeMore">
+                <h3 class="seebtn">See More <i class="fas fa-arrow-right"></i></h3>
+
+            </div>
         </div>
         
+        
+        <div class="relatedProducts">
+            <h2 class="sectionTitle">Related Products</h2>
+            <div class="slideshow middle">
+                <div class="slides">
+                    <input type="radio" name="r" id="r1" checked>
+                    <input type="radio" name="r" id="r2">
+                    <input type="radio" name="r" id="r3">
+                    <input type="radio" name="r" id="r4">
+                    <div class="slide s1">
+                        <div class="left">
+                            <img src="images/action.png" alt="">
+                        </div>
+                        <div class="right">
+                            <h2>Action Camera</h2>
+                            <div class="ratings">
+                                <h2 class="price">$380.00</h2>
+                                <div class="starDiv">
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star-half-alt stars"></i>
+                                </div>
+                                <h2>4.5</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide s2">
+                        <div class="left">
+                            <img src="images/camera.png" alt="">
+                        </div>
+                        <div class="right">
+                            <h2>Vlogging Camera</h2>
+                            <div class="ratings">
+                                <h2 class="price">$1800.00</h2>
+                                <div class="starDiv">
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star-half-alt stars"></i>
+                                </div>
+                                <h2>4.9</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide s3">
+                        <div class="left">
+                            <img src="images/mic.png" alt="">
+                        </div>
+                        <div class="right">
+                            <h2>Microphone</h2>
+                            <div class="ratings">
+                                <h2 class="price">$120.00</h2>
+                                <div class="starDiv">
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star-half-alt stars"></i>
+                                </div>
+                                <h2>4.9</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide s4">
+                        <div class="left">
+                            <img src="images/airpod.png" alt="">
+                        </div>
+                        <div class="right">
+                            <h2>Airbuds</h2>
+                            <div class="ratings">
+                                <h2 class="price">$100.00</h2>
+                                <div class="starDiv">
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star stars"></i>
+                                    <i class="fas fa-star-half-alt stars"></i>
+                                </div>
+                                <h2>4.9</h2>
+                            </div>
+                        </div>
+                    </div>
+                        
+                    
+                </div>
+                <div class="navigator">
+                    <label for="r1" class="bar"></label>
+                    <label for="r2" class="bar"></label>
+                    <label for="r3" class="bar"></label>
+                    <label for="r4" class="bar"></label>
+                </div>
+            </div>
+        </div>
         
     </main>
     <footer>
