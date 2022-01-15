@@ -1,15 +1,19 @@
 /* --------- fonts start------------ */
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap');
 
 * {
   margin: 0%;
   padding: 0%;
 }
+
+/* navigation bar */
+
 nav {
   display: flex;
   justify-content: space-between;
-  margin: 80px 120px;
+  margin: 20px 120px;
 }
 
 nav ul {
@@ -23,21 +27,44 @@ nav ul a {
   text-decoration: none;
 }
 
+/* navgigation bar end */
+
+.prebookBtn{
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #E02C6D;
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+  margin-top: 10px;
+  border: white;
+  box-shadow: 2px 5px 7px 2px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  position: relative;
+  top: 0%;
+}
+.prebookBtn:hover{
+  background-color: #f7377d;
+}
+.prebookBtn:active{
+  top: 5px;
+  box-shadow: 2px 0px 7px 2px rgba(0, 0, 0, 0.25);
+}
+
 .container {
   display: flex;
-  margin: 50px 230px;
-  justify-content: space-between;
+  margin: 100px 5%;
   align-items: center;
-  overflow: hidden;
+  justify-content: center;
 }
 .heading {
-  margin: 50px;
+  width: 600px;
+  margin: 0 5% 0 0;
   padding: 20px;
 }
 .headingImage {
   height: 475px;
   width: 475px;
-  margin-right: 65px;
 }
 .circleBg {
   position: relative;
@@ -55,24 +82,39 @@ header h1 {
   font-size: 58px;
   margin-bottom: 30px;
 }
-.heading p {
+p {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 25px;
   font-weight: 600;
+  
 }
 .logos {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 5%;
+  flex-wrap: wrap;
 }
 .logos img {
-  margin: 5px 25px;
+  position: relative;
+  bottom: 0;
+  padding: 35px 5px;
+  margin: 0 35px;
+  cursor: pointer;
+}
+.logos img:hover{
+  bottom: 15px;
 }
 hr {
   border: 1px solid lightgrey;
 }
-
+#popular{
+  margin: 60px 0;
+  text-align: center;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 40px
+}
 main > h2{
   margin: 100px 0;
   text-align: center;
@@ -80,7 +122,6 @@ main > h2{
 .productSection{
   display: flex;
   justify-content: center;
-  margin-top: 30px;
 }
 .products{
     display: grid;
@@ -91,21 +132,37 @@ main > h2{
 }
 article{
     display: flex;
-    width: 350px;
     box-shadow:  0px 0px 19px 0px rgb(0, 0, 0, .15);
     padding-bottom: 10px;
-}
-.productContainer{
-  margin: auto;
-}
-.productImage{
-    width: 300px;
-    height: 256px;
+    cursor: pointer;
     border-radius: 15px;
-    margin: 15px 0;
 }
-.productInfo h2{
+article:hover{
+  background-color: #E02C6D;
+  transform: scale(1.1);
+  transition: transform .5s;
+}
+
+.productContainer{
+  border-radius: 15px;
+}
+.productImage, .productInfo{
+    border-radius: 15px;
+    margin: 15px 15px;
+}
+.productImage img{
+  width: 100%;
+}
+.productInfo  h2{
+  font-family: "Poppins", sans-serif;
   padding: 5px 0;
+}
+.price{
+  font-weight: 500;
+}
+.productInfo p{
+  color: #787885;
+  margin: 10px 0 ;
 }
 .ratings{
   margin: 5px 0;
@@ -125,9 +182,17 @@ footer{
   text-align: center;
   background-color: black;
   color: white;
+  padding: 50px 0;
+}
+footer h1{
+  font-family: "Poppins", sans-serif;
+  size: 25px;
+  margin: 5px;
 }
 
-@media only screen and (max-width:688px) {
+/* responsive css */
+
+@media only screen and (max-width:745px) {
 
   .container{
     flex-direction: column-reverse;
@@ -137,7 +202,26 @@ footer{
     margin: 0 0;
   }
   .heading{
-    margin: 0 0;
+    width: 100%;
+    margin: 0 35%;
+    padding: 0%;
+    margin-bottom: 65px;
+  }
+  .heading p{
+    margin: 0 5%;
+  }
+  .headingImage{
+    width: 300px;
+    height: 300px;
+    margin: 45px ;
+  }
+  .headingImage img{
+    width: 300px;
+    height: 300px;
+  }
+  .mainCamera{
+    top: -300px;
+    left: 10px;
   }
   .logos{
     flex-wrap: wrap;
