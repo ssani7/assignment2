@@ -7,6 +7,7 @@
   --poppins-font: "Poppins", sans-serif;
   --style-font: "Kaushan Script", cursive;
   --heading-font: 'Yanone Kaffeesatz', sans-serif;
+  --primary-color: #E02C6D;
 }
 
 * {
@@ -32,8 +33,8 @@
 nav {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
-  margin-left: 50px;
+  margin: 20px 30px;
+  align-items: center;
 }
 
 nav ul {
@@ -42,18 +43,27 @@ nav ul {
 nav li {
   list-style: none;
   margin: 10px;
+  cursor: pointer;
 }
 nav ul a {
   text-decoration: none;
   color: black;
 }
+nav li:hover{
+  color: var(--primary-color);
+}
+nav li:hover a{
+  color: var(--primary-color);
+}
 
 /* navgigation bar end */
+
+/* ---------------- buttons ------------- */
 
 .prebookBtn{
   padding: 10px 20px;
   border-radius: 10px;
-  background-color: #E02C6D;
+  background-color: var(--primary-color);
   font-weight: 700;
   font-size: 16px;
   color: white;
@@ -66,11 +76,11 @@ nav ul a {
 }
 .seebtn{
   font-family: var(--poppins-font);
-  color: #E02C6D;
+  color: var(--primary-color);
   font-size: 18px;
-  text-align: end;
-  order: 12;
+  text-align: center;
   margin: 10px 0;
+  cursor: pointer;
 }
 .seeMore{
   align-items: flex-end;
@@ -83,6 +93,10 @@ nav ul a {
   top: 5px;
   box-shadow: 2px 0px 7px 2px rgba(0, 0, 0, 0.25);
 }
+
+/* ---------body styles--------------------- 
+  --------------start ---------------------- */
+
 .logo{
   font-family: var(--heading-font);
   font-size: 40px;
@@ -155,6 +169,11 @@ main > h2{
   margin: 100px 0;
   text-align: center;
 }
+
+/* -----------------
+      product section 
+  ------------------------*/
+
 .productSection{
   display: flex;
   align-items: center;
@@ -176,7 +195,7 @@ article{
     
 }
 article:hover{
-  background-color: #E02C6D;
+  background-color: var(--primary-color);
   transform: scale(1.1);
 }
 
@@ -213,6 +232,11 @@ article:hover{
 .stars{
   color: #FB8200;
 }
+
+/*-------------
+    footer 
+------------- */
+
 footer{
   margin-top: 50px;
   width: 100%;
@@ -229,7 +253,9 @@ footer h1{
 
 
 
-/* related products */
+/* ----------
+  related products 
+------------------*/
 
 .slideshow{
   position: relative;
@@ -281,7 +307,7 @@ input[name="r"]{
   text-align: center;
   color: white;
   position: absolute;
-  margin-left: 30%;
+  margin-left: 25%;
   margin-top: 10px;
 }
 
@@ -299,7 +325,9 @@ margin-left: -40%;
 margin-left: -60%;
 }
 
-/* responsive css */
+/* --------------
+  responsive css 
+  -----------------*/
 
 @media only screen and (max-width:745px) {
   .navBar{
@@ -314,15 +342,12 @@ margin-left: -60%;
     height: 100%;
     flex-direction: column;
     align-items: center;
-    /* transform: translateY(-120%); */
     top: -120%;
     transition: .5s ease-in-out;
   }
   #navToggler:checked ~ .navigation{
     top: 80px;
   }
-
-
   .container{
     flex-direction: column-reverse;
     justify-content: center;
@@ -375,7 +400,6 @@ margin-left: -60%;
       margin: 0 10px;
       text-align: center;
     }
-    
     .right .stars{
       font-size: 10px;
     }
