@@ -49,14 +49,10 @@ nav ul a {
   text-decoration: none;
   color: black;
 }
-nav li:hover{
-  color: var(--primary-color);
-}
 nav li:hover a{
   color: var(--primary-color);
 }
 
-/* navgigation bar end */
 
 /* ---------------- buttons ------------- */
 
@@ -79,7 +75,7 @@ nav li:hover a{
   color: var(--primary-color);
   font-size: 18px;
   text-align: center;
-  margin: 10px 0;
+  margin: 25px 0;
   cursor: pointer;
 }
 .seeMore{
@@ -213,7 +209,7 @@ main > h2{
   align-items: center;
   flex-direction: column;
 }
-.products{
+#products{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 20px;
@@ -389,7 +385,7 @@ footer h1{
     cursor: pointer;
   }
   .navigation{
-    position: fixed;
+    position: absolute;
     top: 80px;
     left: 0%;
     width: 100%;
@@ -440,7 +436,7 @@ footer h1{
   .logos{
     flex-wrap: wrap;
   }
-  .products{
+  #products{
     grid-template-columns: 1fr;
 
   }
