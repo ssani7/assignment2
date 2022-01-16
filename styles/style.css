@@ -113,6 +113,8 @@ nav li:hover a{
   padding: 20px;
 }
 
+/* styling flipbox */
+
 .flipbox{
   height: 475px;
   width: 475px;
@@ -133,9 +135,6 @@ nav li:hover a{
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
-.boxFront{
-  background-color: blue;
-}
 .boxBack{
   transform: rotateY(180deg);
 }
@@ -154,14 +153,13 @@ nav li:hover a{
 }
 .mainCameraBack{
   width: 80%;
-  left: 50px;
+  left: 60px;
   top: 25px;
   position: absolute;
   z-index: 3;
 }
 
-
-
+/* flipbox style end */
 
 header h1 {
   font-family: var(--style-font);
@@ -230,6 +228,8 @@ article{
     transition: transform .5s;
     
 }
+/* styles for hovering over products */
+
 article:hover{
   background-color: var(--primary-color);
   transform: scale(1.1);
@@ -237,6 +237,8 @@ article:hover{
 article:hover p{
   color: white;
 }
+
+/* hover syle end */
 
 .productContainer{
   border-radius: 15px;
@@ -310,8 +312,8 @@ footer h1{
   left: 40%;
 }
 .bar{
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   border: 1px solid red;
   border-radius: 50%;
   margin: 6px;
@@ -367,16 +369,13 @@ margin-left: -60%;
 /* --------------
   responsive css 
   -----------------*/
-@media only screen and (max-width:1160px) {
-  /* .mainCamera, .circleBg, .mainCameraBack{
-    height: 300px;
-    width: 300px;
-
-  } */
-}
 
 
 @media only screen and (max-width:745px) {
+
+  /* ---------- 
+    navigation bar
+  ----------- */
   .navBar{
     display: block;
     cursor: pointer;
@@ -395,6 +394,9 @@ margin-left: -60%;
   #navToggler:checked ~ .navigation{
     top: 80px;
   }
+
+  /* header section */
+
   .container{
     flex-direction: column-reverse;
     justify-content: center;
@@ -410,17 +412,23 @@ margin-left: -60%;
   .heading p{
     margin: 0 5%;
   }
+
+  /* flexbox start */
+
   .flipbox{
     width: 300px;
     height: 300px;
     margin: 45px ;
   }
-  .headingImage img{
-    width: 250px;
-    height: 250px;
+  .circleBg{
+    left: 0;
   }
-  .mainCamera{
+  .mainCameraBack{
+    left: 35px;
   }
+
+  /* flipbox end */
+
   .logos{
     flex-wrap: wrap;
   }
@@ -433,6 +441,9 @@ margin-left: -60%;
   }
   
   @media only screen and (max-width:495px) {
+
+    /* shrinking related prodduct slider for smaller screen */
+
     .slideshow{
       height: 200px;
       width: 200px;
