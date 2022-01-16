@@ -274,26 +274,6 @@ article:hover p{
   color: #FB8200;
 }
 
-/*-------------
-    footer 
-------------- */
-
-footer{
-  margin-top: 50px;
-  width: 100%;
-  text-align: center;
-  background-color: black;
-  color: white;
-  padding: 50px 0;
-}
-footer h1{
-  font-family: "Poppins", sans-serif;
-  size: 25px;
-  margin: 5px;
-}
-
-
-
 /* ----------
   related products 
 ------------------*/
@@ -365,6 +345,34 @@ margin-left: -40%;
 #r4:checked ~ .s4{
 margin-left: -60%;
 }
+
+/*-------------
+    footer 
+------------- */
+
+footer{
+  margin-top: 50px;
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 50px 0;
+}
+footer h1{
+  font-family: "Poppins", sans-serif;
+  size: 25px;
+  margin: 5px;
+}
+.socialIcons{
+  padding: 5px;
+  cursor: pointer;
+  margin: 12px;
+  background-color: gray;
+  color: white;
+  border-radius: 50%;
+}
+
+
 
 /* --------------
   responsive css 
